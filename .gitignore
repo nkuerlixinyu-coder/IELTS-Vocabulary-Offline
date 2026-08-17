@@ -1,0 +1,38 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Android and Gradle generated files
+.gradle/
+**/.gradle/
+.kotlin/
+**/.kotlin/
+**/build/
+local.properties
+captures/
+android-app/dist/
+
+# Release binaries belong in GitHub Releases, not Git history
+*.apk
+*.aab
+*.apks
+
+# Signing material must never be committed
+*.jks
+*.keystore
+keystore.properties
+*.pem
+*.p12
+*.key

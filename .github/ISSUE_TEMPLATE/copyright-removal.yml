@@ -1,0 +1,59 @@
+name: 版权/内容删除请求
+description: 供权利人或获授权代表申请更正、限制展示或删除相关内容
+title: "[版权/删除请求] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您联系我们。此 Issue 默认公开，请勿提交身份证件、住址、电话号码、完整合同等不必要的敏感信息。需要进一步核验时，可先要求维护者提供非公开沟通渠道。
+  - type: input
+    id: work
+    attributes:
+      label: 涉及的作品或内容
+      description: 请填写作品名称或简要说明受保护内容。
+      placeholder: 例如：某教材第 X 版的文字、音频或页面图片
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: 仓库中的具体位置
+      description: 请列出文件路径、页面位置、链接或 Release 附件名称。
+      placeholder: |
+        assets/pages/page-xxx.jpg
+        Release vX.Y.Z / filename.apk
+    validations:
+      required: true
+  - type: textarea
+    id: relationship
+    attributes:
+      label: 权利关系或可核实依据
+      description: 请简要说明您是权利人还是获授权代表；如需提供敏感证明材料，请先要求非公开沟通渠道。
+    validations:
+      required: true
+  - type: dropdown
+    id: action
+    attributes:
+      label: 希望采取的措施
+      options:
+        - 删除相关内容
+        - 移除相关 Release 附件
+        - 限制展示或分发
+        - 更正署名或说明
+        - 其他（请在补充说明中描述）
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 补充说明
+      description: 可填写建议处理范围、时间要求或其他有助于核实的信息。
+  - type: checkboxes
+    id: declaration
+    attributes:
+      label: 声明
+      options:
+        - label: 我确认以上信息真实准确，并有权代表相关权利提出此请求。
+          required: true
+        - label: 我已避免在公开 Issue 中提交不必要的敏感个人信息。
+          required: true
