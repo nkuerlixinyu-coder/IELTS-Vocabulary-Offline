@@ -28,6 +28,7 @@ android-app/dist/
 *.apk
 *.aab
 *.apks
+release/**/*.zip
 
 # Signing material must never be committed
 *.jks

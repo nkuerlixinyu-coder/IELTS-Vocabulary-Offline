@@ -1,6 +1,6 @@
 # v1.0.0 Release Notes
 
-首个 Android 离线版候选发布。
+首个网页版与 Android 离线版候选发布。
 
 ## 功能
 
@@ -11,14 +11,24 @@
 - 记忆上次章节、页码和阅读模式；
 - 不申请网络权限。
 
-## 安装包
+## 网页版发布包
+
+- 文件：`IELTS-Vocabulary-Offline-Web-1.0.0.zip`
+- 内容：`index.html`、完整 `assets/`、README、版权说明和许可证
+- 大小：655,667,959 bytes（约 625.29 MiB）
+
+解压后，在包含 `index.html` 与 `assets/` 的目录启动静态文件服务器，例如运行 `python -m http.server 8000`，然后打开 <http://127.0.0.1:8000/>。
+
+GitHub 自动提供的 “Source code” 压缩包是仓库快照；文件名中带 `Web` 的 ZIP 是整理后的网页版发布包。
+
+## Android 安装包
 
 - 文件：`IELTS-Vocabulary-Offline-Android-1.0.0.apk`
 - 最低系统：Android 7.0（API 24）
 - 当前候选包：Android 调试签名
 - 大小：709,486,144 bytes（约 676.62 MiB）
 
-SHA-256 见同目录 `SHA256SUMS.txt`。公开发布前请按 `docs/RELEASING.md` 完成真机、签名和版权确认。
+两个发布包的 SHA-256 均见同目录 `SHA256SUMS.txt`。公开发布前请按 `docs/RELEASING.md` 完成网页、真机、签名和版权确认。
 
 ## 版权与免责声明
 

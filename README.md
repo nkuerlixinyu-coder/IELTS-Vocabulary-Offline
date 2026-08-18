@@ -28,7 +28,9 @@
 
 ### 网页版
 
-无需安装项目依赖。完整下载或克隆仓库后，在项目根目录启动任意静态文件服务器。例如已安装 Python 3 时：
+可从 [v1.0.0 Release](https://github.com/nkuerlixinyu-coder/IELTS-Vocabulary-Offline/releases/tag/v1.0.0) 下载 `IELTS-Vocabulary-Offline-Web-1.0.0.zip`。GitHub 自动生成的 “Source code” 压缩包是仓库快照；文件名中带 `Web` 的 ZIP 是整理后的网页版发布包。
+
+解压网页版发布包，或完整克隆仓库后，在包含 `index.html` 与 `assets/` 的目录启动任意静态文件服务器。例如已安装 Python 3 时：
 
 ```powershell
 python -m http.server 8000

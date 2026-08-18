@@ -1,1 +1,2 @@
 d732ca2b57a830a4447db8057db3e9e7d7fcd5eddef8f33f7cbef50ce42d42d7  IELTS-Vocabulary-Offline-Android-1.0.0.apk
+b0ff70de8c8bb65ff1adc8b501ae592c7e13b0b4de0b5ef5b26dc21f916fcd68  IELTS-Vocabulary-Offline-Web-1.0.0.zip

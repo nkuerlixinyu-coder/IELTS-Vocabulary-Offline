@@ -1,6 +1,6 @@
 # 发布检查清单
 
-本文件用于准备 GitHub 仓库公开发布和 Android APK Release。版权声明不能替代第三方内容的实际授权或其他合法依据。
+本文件用于准备 GitHub 仓库公开发布、网页版 ZIP 和 Android APK Release。版权声明不能替代第三方内容的实际授权或其他合法依据。
 
 ## 公开仓库前
 
@@ -43,9 +43,10 @@ android-app/dist/SHA256SUMS.txt
 
 1. 使用语义化版本标签，例如 `v1.0.0`。
 2. 使用 `release/v1.0.0/RELEASE_NOTES.md` 作为发布说明并按实际情况更新。
-3. 将 APK 和 `SHA256SUMS.txt` 作为 GitHub Release 附件上传，不要把 APK 提交到 Git 历史。
-4. 下载一次已上传的附件并复核 SHA-256。
-5. 再次确认 Release 页面包含非官方项目声明、第三方内容许可边界和删除请求入口。
+3. 将 `index.html`、完整 `assets/`、README、版权说明和许可证打包为 `IELTS-Vocabulary-Offline-Web-<版本>.zip`。
+4. 将网页版 ZIP、APK 和包含两者校验值的 `SHA256SUMS.txt` 作为 GitHub Release 附件上传，不要把大型发布包提交到 Git 历史。
+5. 下载或远端读取已上传的附件并复核文件大小与 SHA-256。
+6. 再次确认 Release 页面包含非官方项目声明、第三方内容许可边界和删除请求入口。
 
 ## 发现版权问题后的处理
 
